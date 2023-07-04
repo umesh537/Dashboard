@@ -1,0 +1,21 @@
+.form-group .form-control {
+    margin-top: 5px;
+}
+
+.show-tag {
+    display: flex;
+    justify-content: end;
+}
+
+.submit-button{
+    display: flex;
+    justify-content: center;
+}
+
+.showPasswordToggle{
+    cursor: pointer;
+    transition: all;
+}
+.showPasswordToggle:hover{
+    transform: scale(1.2);
+}
