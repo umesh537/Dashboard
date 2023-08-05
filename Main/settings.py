@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'userpreferences',
     'authentication',
+    'userincome',
     'expenses',
 ]
 
@@ -80,13 +81,23 @@ WSGI_APPLICATION = 'Main.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME'),
-        'USER': os.environ.get('DB_USER'),
-        'PASSWORD': os.environ.get('DB_USER_PASSWORD'),
-        'HOST': os.environ.get('DB_HOST'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'dashboarddb',
+        'HOST': 'localhost',
+        'USER': 'root',
+        'PASSWORD': 'Surya@01'
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.environ.get('DB_NAME'),
+#         'USER': os.environ.get('DB_USER'),
+#         'PASSWORD': os.environ.get('DB_USER_PASSWORD'),
+#         'HOST': os.environ.get('DB_HOST'),
+#     }
+# }
 
 
 # Password validation
@@ -151,3 +162,5 @@ DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_USER_PASSWORD')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+

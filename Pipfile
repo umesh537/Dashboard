@@ -8,6 +8,9 @@ django = "*"
 psycopg2 = "*"
 email-validator = "*"
 validate-email = "*"
+xlwt = "*"
+weasyprint = "*"
+mysqlclient = "*"
 
 [dev-packages]
 
